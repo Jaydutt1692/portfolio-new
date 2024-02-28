@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
@@ -8,19 +8,18 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_x1hewh5",
-        "template_2ki8hlo",
-        form.current,
-        "vxDcl4UI2jbOQBn6f"
-      )
-      e.target.reset()
+    emailjs.sendForm(
+      "service_x1hewh5",
+      "template_2ki8hlo",
+      form.current,
+      "vxDcl4UI2jbOQBn6f"
+    );
+    e.target.reset();
   };
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
+      <h2 className="section__title">Get in touch ✌️</h2>
       <span className="section__subtitle">Contact Me</span>
 
       <div className="contact__container container grid">
@@ -32,10 +31,12 @@ const Contact = () => {
               <i className="bx bx-mail-send contact__card-icon"></i>
 
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">user@gmail.com</span>
+              <span className="contact__card-data">
+                pateljaydutt3110@gmail.com
+              </span>
 
               <a
-                href="mailto:examplemail@gmail.com.com"
+                href="mailto:pateljaydutt3110@gmail.com"
                 className="contact__button"
               >
                 Write me{" "}
@@ -43,7 +44,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="contact__card">
+            {/* <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
 
               <h3 className="contact__card-title">Whatsapp</h3>
@@ -56,16 +57,20 @@ const Contact = () => {
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
-            </div>
+            </div> */}
 
             <div className="contact__card">
-              <i className="bx bxl-messenger contact__card-icon"></i>
+              <i className="bx bxl-linkedin contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data">user.fb123</span>
+              <h3 className="contact__card-title">LinkedIn</h3>
+              <span className="contact__card-data">Jaydutt Patel</span>
 
-              <a href="https://m.me/crypticalcoder" className="contact__button">
-                Write me{" "}
+              <a
+                href="https://www.linkedin.com/in/jaydutt-patel-204049233/"
+                className="contact__button"
+                target="_blank"
+              >
+                Connect with me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -73,7 +78,7 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">Enter the below details</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
@@ -82,28 +87,28 @@ const Contact = () => {
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Insert your name"
+                placeholder="Your Name"
               />
             </div>
 
             <div className="contact__form-div">
-              <label className="contact__form-tag">Mail</label>
+              <label className="contact__form-tag">E-Mail</label>
               <input
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Insert your email"
+                placeholder="Your Email"
               />
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Project</label>
+              <label className="contact__form-tag">Message</label>
               <textarea
                 name="project"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Write your project"
+                placeholder="Write your message"
               ></textarea>
             </div>
 

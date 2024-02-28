@@ -10,15 +10,15 @@ const Services = () => {
 
   return (
     <section className="services section" id="services">
-      <h2 className="section__title">Services</h2>
-      <span className="section__subtitle">What i offer</span>
+      <h2 className="section__title">Experiences</h2>
+      <span className="section__subtitle">What i have achieved</span>
 
       <div className="services__container container grid">
         <div className="services__content">
           <div>
             <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
-              Product <br /> Designer
+              Peer <br /> Tutor
             </h3>
           </div>
 
@@ -40,10 +40,10 @@ const Services = () => {
                 className="uil uil-times services__modal-close"
               ></i>
 
-              <h3 className="services__modal-title">Product Designer</h3>
+              <h3 className="services__modal-title">Peer Tutor</h3>
               <p className="services__modal-description">
-                Service with more than 3 years of experience.Providing quality
-                work to clients and companies.
+                Helped students with their studies and assignments. I have done
+                data entry and data analysis for the college.
               </p>
 
               <ul className="services__modal-services grid">
@@ -88,7 +88,7 @@ const Services = () => {
           <div>
             <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">
-              Ui/Ux <br /> Designer
+              Technical Support <br /> Specialist
             </h3>
           </div>
 
@@ -154,7 +154,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="services__content">
+        {/* <div className="services__content">
           <div>
             <i className="uil uil-edit services__icon"></i>
             <h3 className="services__title">
@@ -222,7 +222,7 @@ const Services = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

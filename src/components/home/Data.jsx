@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        John Smith
+        Jaydutt Patel
         <svg
           width="36"
           height="36"
@@ -55,14 +55,14 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Visual Designer</h3>
+      <h3 className="home__subtitle">CSTN - Networking</h3>
       <p className="home__description">
-        I'm creative designer based in New York, and I'm very passionate and
-        dedicated to my work.
+        I design and develop services for customers of all sizes, specializing
+        in creating stylish, modern websites, web services and online stores.
       </p>
 
       <a href="#contact" className="button button--flex">
-        Say Hello
+        Contact Me
         <svg
           class="button__icon"
           xmlns="http://www.w3.org/2000/svg"
